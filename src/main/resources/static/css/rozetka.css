@@ -1,0 +1,10 @@
+.Part1{
+display: flex;
+border: 1px solid black;
+width: 100px;
+height: 150px;
+}
+.Part2{
+display: flex;
+justify-content: space-around;
+}

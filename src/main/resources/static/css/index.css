@@ -1,0 +1,770 @@
+#Part1{
+    background: url(../Img/town.png);
+    height: 798px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 68px;
+}
+body{
+margin: 0;
+}
+.logo{
+    display: block;
+    margin: 0 auto;
+}
+@font-face {
+    font-family: 'OpenSands';
+    src: url('Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+.text{
+    color: white;
+    font-size: 39px;
+    font-family: 'OpenSands';
+    margin-top: 74px;
+    margin-left: 396px;
+}
+.text1{
+    color: white;
+    font-size: 39px;
+    font-family: 'OpenSands';
+    margin-left: 480px;
+    margin-top: 4px;
+    font-weight: bolder;
+}
+.line{
+    background: aqua;
+    height: 1px;
+    margin-top: -28px;
+}
+.enter{
+    margin-top: 28px;
+    margin-left: 19px;
+    width: 264px;
+    height: 34px;
+    padding-left: 22px;
+    border: 1px solid lightgray;
+}
+.enter::-webkit-input-placeholder{
+    color: lightgray;
+}
+.liitletown{
+    display: block;
+    width: 100%;
+    height: 87px;
+    margin-top: 25px;
+}
+.input{
+    background: white;
+    width: 330px;
+    height: 333px;
+    margin: 0 auto;
+    margin-top: 59px;
+    border:1px solid lightgray;
+}
+.pressMe{
+    background: #217dd3;
+    width: 191px;
+    height: 44px;
+    margin-top: 28px;
+    margin-left: 73px;
+    color: white;
+    font-size: large;
+    border: none;
+}
+.text2{
+    margin-top: 23px;
+    color: #bebbbb;
+    margin-left: 58px;
+}
+.text3{
+ color: #bebbbb;
+ margin-left: 113px;
+}
+#Part2{
+    display: flex;
+    width: 860px;
+    margin: 0 auto;
+    height: 397px;
+    padding-top: 200px;
+}
+.Part2_div1{
+    display: flex;
+}
+.Part2_div2{
+    display: flex;
+    margin-left: 40px;
+}
+.Part2_div1_text1{
+    width: 277px;
+    color: gray;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.Part2_div1_Documents{
+    font-size: 28px;
+}
+.Part2_div1_block{
+    margin-left: 26px;
+    padding-top: 10px;
+}
+#Part3{
+    background: url(../Img/background.png);
+    height: 1352px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 85px;
+}
+.planshet2{
+    display: block;
+    margin-left: 31%;
+}
+.Part3_text{
+    width: 663px;
+    height: 335px;
+    color: white;
+    margin: 0 auto;
+    margin-top: -300px;
+}
+.Part3_text1{
+    font-size: 14px;
+    width: 86%;
+    margin-top: 43px;
+    
+}
+.Part3_text4{
+    width: 310px;
+    margin: 0 auto;
+    font-size: 39px;
+}
+.Part3_text2{
+    font-size: 14px;
+    margin-top: 54px;
+    width: 86%;
+}
+.Part3_bottom{
+    display: flex;
+    margin-top: 440px;
+    margin-left: -51px;
+}
+.Part3_text5{
+    width: 514px;
+    height: 243px;
+    color: white;
+    margin-left: 116px;
+    margin-top: -16px;
+}
+.Part3_text6{
+    font-size: 39px;
+}
+.Part3_text7{
+    font-size: 14px;
+    margin-top: 26px;
+    width: 376px;
+}
+.Part3_bottom_download{
+    width: 198px;
+    height: 54px;
+    border-radius: 6%;
+    border: 3px solid white;
+    background-color: #44a36e;
+    color: white;
+    display: block;
+    margin-left: 572px;
+    margin-top: -116px;
+    font-size: 0.6cm;
+}
+#Part4{
+    background: url(../Img/maps.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 633px;
+    padding-top: 164px;
+}
+.Part4_circle{
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    background: white;
+    margin: 0 auto;
+    opacity: 0.6;
+    /* opacity: - насыщенность прозрачности от 0 до 1 */
+    position: relative;
+    z-index: 0;
+}
+.Part4_form input{
+    display: block;
+    margin-bottom: 14px;
+    width: 278px;
+    height: 35px;
+    position: relative;
+    z-index: 2;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+}
+.Part4_form textarea{
+    width: 278px;
+    height: 79px;
+    position: relative;
+    z-index: 2;
+    border: 1px solid lightgray;
+    padding-left: 10px;
+}
+.Part4_form{
+    margin-left: 550px;
+    margin-top: -315px;
+    z-index: 2;
+
+}
+.Part4_gal{
+    margin-left: 116px;
+    margin-top: 31px;
+    position: relative;
+}
+.Part4_form ::placeholder{
+    color: lightgray;
+}
+#Part5{
+   height: 50px;
+   background-color: #439f6d;
+   padding-top: 32px;
+}
+.Part5_text{
+    font-family: 'OpenSands';
+    color: white;
+    font-size: 14px;
+    width: 326px;
+    margin: 0 auto;
+}
+@media (min-width:320px) and (max-width:460px){
+    html >> * body{
+      background-color: orange;
+    }
+    .text{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .text1{
+        margin-left: -3px;
+        text-align: center;
+    }
+    #Part2{
+        flex-direction: column;
+        width: 300px;
+    }
+    .Part2_div1_text1{
+        width: 167px;
+    }
+    .planshet2{
+        margin-left: -73px;
+        width: 320px;
+    }
+    .Part3_text4{
+        margin-left: 0px;
+        padding-left: 2%;
+    }
+    .Part3_text1{
+        width: 310px;
+        font-size: 0.5cm;
+    }
+    .Part3_text2{
+        width: 310px;
+        font-size: 0.5cm;
+        text-align: center;
+    }
+    .Part2_div2{
+        margin-left: 2px;
+        margin-top: 50px;
+    }
+    .Part3_bottom img{
+        width: 320px;
+        margin-left: -24px;
+    }
+    .Part3_bottom{
+        flex-direction: column;
+        margin-top: 298px;
+        width: 320px;
+    }
+    .Part3_text7{
+        margin-left: 50px;
+        width: 310px;
+        text-align: center;
+    }
+    .Part3_text6{
+        padding-left: 10%;
+        width: 320px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .Part4_circle{
+        width: 310px;
+        height: 310px;
+    }
+    .Part2_div1_block{
+        width: 200px;
+        overflow: hidden;
+        /* overflow: hidden; -- не дает тексту вылазить за пределы блока */ 
+    }
+    .Part4_form{
+        margin-left: 48px;
+        padding-top: 52px;
+        width: 250px;
+    }
+    .Part3_bottom_download{
+        margin-left: 62px;
+        margin-top: 30px;
+        position: relative;
+        z-index: 3;
+    }
+    #Part3{
+        width: 100%;
+    }
+    .Part3_text{
+        width: 310px;
+        padding-top: 24px;
+        text-align: center;
+    }
+    .Part3_text5{
+        margin-left: 0px;
+        margin-top: -67px;
+        width: 320px;
+    }
+    #Part4{
+        width: 100%;
+        position: relative;
+        z-index: 2;
+    }
+    #Part5{
+        width: 100%;
+    }
+    .Part5_text{
+        width: 320px;
+        font-size: 13px;
+        text-align: center;
+    }
+    .Part3_bottom_comp{
+        padding-top: 50px;
+    }
+    .Part4_form input{
+        width: 210px;
+    }
+    .Part4_form textarea{
+        width: 210px;
+    }
+    .Part4_gal{
+        margin-left: 75px;
+        margin-top: -4px;
+    }
+    .Part4_form ::placeholder{
+        font-size: 18px;
+    }
+    .input{
+        width: 318px;
+    }
+}
+@media (min-width:460px) and (max-width:560px){
+
+    .planshet1{
+        margin-top: -28px;
+    }
+    
+    .planshet2{
+        margin-left: -16px;
+    }
+    .Part3_bottom{
+        margin: 0 auto;
+        margin-top: 299px;
+        width: 460px;
+    }
+    .Part3_bottom_download {
+        margin-left: 117px;
+    }
+    .Part3_bottom_comp{
+        padding-left: 20px;
+        width: 320px;
+        margin-left: -24px;
+    }
+    .Part4_form {
+        margin-left: 118px;
+    }
+    .Part3_text5{
+        width: 460px;
+    }
+    .Part3_text7{
+        width: 310px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 24px;
+    }
+}
+@media (min-width:560px) and (max-width:765px){
+    #Part2{
+        width: 560px;
+        display: block;
+    }
+    .Part3_text{
+        width: 560px;
+    }
+    .Part3_bottom{
+        flex-direction: column;
+        width: 560px;
+    }
+    .text{
+        text-align: center;
+        margin-left: 20px;
+    }
+    .text1{
+        text-align: center;
+        margin-left: 6px;
+    }
+    .Part2_div1{
+        margin-left: 112px;
+    }
+    .Part2_div2{
+        margin-top: 100px;
+        margin-left: 107px;
+    }
+    .Part3_text1{
+        text-align: center;
+        margin-left: 42px;
+    }
+    .Part3_text2{
+        text-align: center;
+        margin-left: 42px;
+    }
+    .Part3_bottom_comp{
+        width: 360px;
+        height: 215px;
+        margin-left: 2px;
+        padding-top: 24px;
+    }
+    .Part3_text5{
+        width: 420px;
+    }
+    .Part3_text6{
+        width: 380px;
+        margin-left: 30px;
+    }
+    .Part3_text7{
+        width: 442px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 24px;
+        margin-left: -57px;
+    }
+    .Part3_bottom_download{
+        margin-top: 20px;
+        margin-left: 171px;
+    }
+    .Part4_form{
+        margin-left: 135px;
+    }
+}
+@media (min-width:560px) and (max-width:765px){
+    #Part2{
+        display: flex;
+        justify-content: space-around;
+        /* justify-content: space-around; --- заставляет детенышей отодвинуться друг от друга одинаково */
+    }
+    .Part2_div1{
+        margin-left: -58px;
+        flex-direction: column;
+        width: 250px;
+    }
+    .Part2_div2{
+        width: 250px;
+        flex-direction: column;
+        margin-top: -12px;
+        margin-left: -58px;
+    }
+    .Part2_div1_img{
+        padding-left: 37%;
+    }
+    .Part2_div2_img{
+        margin-left: 35%;
+    }
+    .Part2_div1_Documents{
+        text-align: center;
+    }
+    .Part2_div1_text1{
+        width: 220px;
+        overflow: hidden;
+        margin-left: 5px;
+    }
+    .planshet2{
+        margin-left: 0%;
+    }
+    .Part3_text1{
+        font-size: 21px;
+    }
+    .Part3_text2{
+        font-size: 21px;
+    }
+    .Part3_bottom_comp{
+        width: 460px;
+        height: 329px;
+        margin-left: -62px;
+    }
+    .Part3_bottom{
+        margin-top: 288px;
+    }
+    .Part3_text5{
+        margin-top: -110px;
+    }
+    .Part3_text6{
+        margin-left: 38px;
+    }
+    .Part3_text7{
+        width: 520px;
+        font-size: 17px;
+        margin-left: -94px;
+    }
+    .Part3_bottom_download {
+        margin-top: -7px;
+        margin-left: 190px;
+    }
+    .Part4_form {
+        margin-left: 140px;
+        width: 350px;
+    }
+}
+@media (min-width:765px) and (max-width:998px){
+    .planshet2{
+        margin-left: 11%;
+    }
+    .Part3_bottom{
+        margin-left: 11%;
+        margin-top: 33%;
+    }
+    .Part3_bottom_download{
+        margin: 0 auto;
+    }
+    .Part4_form{
+        margin-left: 31%;
+    }
+}
+@media (min-width:998px) and (max-width:1200px){
+    .text{
+        margin-left: 24%;
+    }
+    .text1{
+        margin-left: 31%;
+    }
+    .planshet2{
+        margin-left: 21%;
+    }
+    .Part3_text1{
+        font-size: 20px;
+    }
+    .Part3_text2{
+        font-size: 20px;
+    }
+    .Part3_bottom{
+        margin-left: -9%;
+    }
+    .Part3_bottom_download{
+        margin-top: -13%;
+        margin-left: 53%;
+    }
+    .Part4_form {
+        margin-left: 36%;
+    }
+}
+@media (min-width:1200px) and (max-width:1400px){
+    .text {
+        margin-left: 27%;
+    }
+    .text1 {
+        margin-left: 35%;
+    }
+    #Part2{
+        width: 1000px;
+        justify-content: space-around;
+    }
+    .planshet2 {
+        margin-left: 26%;
+    }
+    .Part3_bottom_download {
+        margin-left: 43%;
+    }
+    .Part4_form {
+        margin-left: 38%;
+    }
+    .Part3_text1 {
+        font-size: 24px;
+        width: 131%;
+        margin-left: -12%;
+    }
+    .Part3_text2 {
+        font-size: 24px;
+        width: 131%;
+        height: 250px;
+        margin-left: -12%;
+    }
+    .Part3_text7 {
+        font-size: 19px;
+        margin-top: 26px;
+        width: 103%;
+    }
+    .Part3_bottom_download {
+        margin-top: -10%;
+    }
+}
+@media (min-width:1400px) and (max-width:1920px){
+    .text {
+        margin-left: 30%;
+    }
+    .text1 {
+        margin-left: 37%;
+    }
+    #Part2 {
+        width: 1300px;
+        justify-content: space-around;
+    }
+    .planshet2 {
+        margin-left: 30%;
+    }
+    .Part3_bottom_download {
+        margin-top: -9%;
+        margin-left: 41%;
+    }
+    .Part4_form {
+        margin-left: 40%;
+    }
+}
+@media (min-width:1920px){
+    .text {
+        margin-left: 29%;
+        font-size: 55px;
+    }
+    .text1 {
+        margin-left: 38%;
+        font-size: 46px;
+    }
+    .input {
+        width: 430px;
+        height: 433px;
+    }
+    .input form{
+        height: 430px;
+    }
+    .pressMe {
+        width: 291px;
+        height: 61px;
+        margin-top: 36px;
+    }
+    .enter {
+        margin-left: 62px;
+        width: 277px;
+        height: 51px;
+    }
+    .enter::placeholder{
+        font-size: 20px;
+    }
+    .text2 {
+        font-size: 27px;
+    }
+    .text3 {
+        font-size: 27px;
+        margin-left: 141px;
+    }
+    .pressMe{
+        font-size: 25px;
+    }
+    #Part2{
+        width: 1800px;
+        margin-top: 121px;
+    }
+    .Part2_div1 {
+        width: 700px;
+    }
+    .Part2_div1_block {
+        width: 600px;
+    }
+    .Part2_div1_text1 {
+        font-size: 35px;
+        width: 600px;
+    }
+    .Part2_div1_Documents {
+        font-size: 60px;
+    }
+    .Part2_div1_img{
+        margin-top: 54px;
+    }
+    .Part2_div2_img{
+        margin-top: 54px;
+    }
+    .Part3_text4 {
+        width: 600px;
+        margin: 0 auto;
+        font-size: 84px;
+    }
+    .planshet2 {
+        margin-left: 35%;
+    }
+    #Part3{
+        height: 1550px;
+    }
+    .Part3_text {
+        width: 1598px;
+    }
+    .Part3_text1 {
+        font-size: 40px;
+        width: 86%;
+    }
+    .Part3_text2 {
+        font-size: 40px;
+        width: 86%;
+    }
+    .Part3_text6 {
+        font-size: 64px;
+    }
+    .Part3_text7 {
+        font-size: 25px;
+        width: 800px;
+    }
+    .Part3_text5 {
+        width: 800px;
+        height: 300px;
+    }
+    .Part3_bottom {
+        margin-top: 637px;
+        margin-left: 24%;
+    }
+    .Part3_bottom_download {
+        margin-top: -4%;
+        margin-left: 56%;
+    }
+    .Part5_text {
+        width: 1000px;
+        height: 50px;
+        font-size: 25px;
+        margin-left: 36%;
+    }
+    .Part4_circle {
+        width: 530px;
+        height: 530px;
+    }
+    .Part4_form {
+        margin-top: -22%;
+    }
+    .Part4_form input {
+        width: 346px;
+        height: 55px;
+        font-size: 35px;
+    }
+    .Part4_form textarea{
+        width: 346px;
+        height: 150px;
+        font-size: 35px;
+    }
+    .Part4_gal {
+        margin-left: 158px;
+    }
+    .pupil{
+        text-decoration: underline;
+        background: orange;
+    }
+    .span{
+    color: red;
+    }
+}

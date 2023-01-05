@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<link rel="stylesheet" href="css/rozetka.css">
+<body>
+ Мы рады приветствовать Вас в Нашем Интернет Магазине
+ <div class="Part2">
+ <div class="Part1" th:each = "number:${price}">
+<!--     <a th:href="/tovar?Top=${number[0]}">-->
+<!--         <a th:href="@{'/tovar' + ${number[0]}">-->
+<!--     <a href="/tovar">-->
+         <a th:href="@{/tovar/(Top=${number[0]})}">
+    <div th:text = "${number[0]}"></div>
+    <div th:text = "${number[3]}"></div>
+     </a>
+<!--         </a>-->
+<!--     </a>-->
+</div>
+ </div>
+
+</body>
+</html>

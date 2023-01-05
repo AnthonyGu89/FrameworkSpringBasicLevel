@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="css/index.css">
+<body>
+<div th:each = "num: ${massive2}">
+    <div th:text = "${num[0]}"></div>
+    <div th:text = "${num[1]}"></div>
+    <div th:with="flower0 = '/tovar?id='+${num[0]}">
+        <span th:utext="${flower0}"></span>
+        <a th:href="${flower0}" th:text = "${num[1]}"></a>
+    </div>
+
+</div>
+<!--<style>-->
+<!--     .pupil{-->
+<!--        text-decoration: underline;-->
+<!--        background: orange;-->
+<!--    }-->
+<!--</style>-->
+    <div th:text="${first}"></div>
+    <div th:text="${second}"></div>
+    <div th:text="${third}"></div>
+    <div th:text="${myarray}"></div>
+<!--    <div th:each = "number: ${myarray}"></div>-->
+     <tr th:each = "number: ${myarray}">
+         <td th:text = "${number}"></td>
+     </tr>
+    <div th:each = "number1: ${myarray}">
+        <div th:text="${number1}"></div>
+    </div>
+
+    <table>
+    <tr th:each = "number2: ${pupil1}">
+        <td class="pupil" th:text = "${number2}"></td>
+    </tr>
+    </table>
+<li th:text="${pupil1[0]}"></li>
+
+<input th:value= "${pupil1[0]}" type="text" value="Jon Konnor">
+
+<input th:value="${#dates.format(#dates.createNow() , 'yyyy-dd-MM HH:mm:ss')}"/>
+<div th:text="${#dates.format(#dates.createNow() , 'yyyy-dd-MM HH:mm:ss')}"></div>
+
+<table>
+    <tr th:each = "massive1: ${massive}">
+        <td th:text = "${massive1.title}"></td>
+        <td th:text = "${massive1.price}"></td>
+        <td th:text = "${massive1.sale}"></td>
+<!--            <div th:text ="${massive1.title}" ></div>-->
+<!--            <div th:text ="${massive1.price}" ></div>-->
+    </tr>
+</table>
+
+<a href="/home?Tovar=iphone">Iphone</a>
+<a href="/home?Tovar=samsung">Samsung</a>
+
+<form action="/about">
+    <input type="text" name="Login" placeholder="Введите логин">
+    <input type="submit" value="окей">
+</form>
+
+<a href="/player?Age=33&Age2=35">player</a>
+
+<form action="/Mypost" method="post">
+<!--    <span  class="span" th:style="color:${color}" th:text="${oshibka}"></span>-->
+<!--    <div th:style="${color==red ? 'color:red'}" th:text="${oshibka}">-->
+        <div th:style="${color == 'red' ? 'color:red' : 'color:blue'}" th:text="${oshibka}" ></div>
+<!--    th:style="${role == 'ADMIN' ? 'display:block' : 'display:none'}" >-->
+    <input type="text" name="Login5" placeholder="Введите логин">
+    <input type="text" name="password" placeholder="Введите пароль">
+    <input type="submit" value="Enter">
+</form>
+ <div style="color:red"> Hello</div>
+<span th:text = "${color}"></span>
+
+<div id="Part1">
+    <img  class="logo" src="Img/logo.png" alt="">
+
+    <div class="text">BE SHURE YOU PUT YOUR FEET</div> 
+    <h1 class="text1">IN THE RIGHT PLACE</h1>
+     
+    <div class="line"></div>
+     
+    <div class="input">
+        <form action="/contact">
+            <input  class="enter" type="text" placeholder="Enter your zip code">
+            <img class="liitletown" src="Img/liitletown.png" alt="">
+            <div class="text2">This is Photoshop`s version of</div>
+            <div class="text3">Lorem Ipsum.</div>
+            <input class="pressMe" type="submit" value="PRESS ME">
+
+
+        </form>
+        
+
+    </div>
+    
+
+
+</div>
+
+<div id="Part2">
+
+        <div class="Part2_div1">
+
+           <div>
+               <img class="Part2_div1_img" src="Img/Documents.png" alt="">
+              </div>
+
+              <div class="Part2_div1_block">
+                    <div class="Part2_div1_Documents">Documents</div>
+                    <div class="Part2_div1_text1">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+               </div>
+        </div>
+
+        <div class="Part2_div2">
+            <div>
+                <img class="Part2_div2_img" src="Img/Photos.png" alt="">
+               </div>
+ 
+               <div class="Part2_div1_block">
+                     <div class="Part2_div1_Documents">Photos</div>
+                     <div class="Part2_div1_text1">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin</div>
+                </div>
+
+        </div>
+
+</div>
+
+<div id="Part3">
+    
+    <div class="planshet1">
+        <img  class="planshet2" src="Img/planshet.png" alt="">
+          
+        <div class="Part3_text">
+          <div class="Part3_text4">This is a Heading</div>
+          <div class="Part3_text1">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </div>
+          <div class="Part3_text2">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</div>
+        </div>
+    </div>
+     
+          <div class="Part3_bottom">
+               <img class="Part3_bottom_comp" src="Img/comp.png" alt="">
+              <div class="Part3_text5">
+                   <div class="Part3_text6">This is a Heading</div>
+                   <div class="Part3_text7">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</div>
+
+                 </div>
+        
+
+            </div>
+             <form action="">
+
+                   <button class="Part3_bottom_download" type="submit">Download</button>
+            </form>
+</div>
+
+<div id="Part4">
+
+        <div class="Part4_circle">
+
+        </div>
+
+        <form class="Part4_form" action="">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="email address">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <div class="Part4_gal"> <img src="Img/gal.png" alt=""></div>
+        </form>
+ 
+</div>
+<div id="Part5">
+    <div class="Part5_text"> © Copyright 2013 Css Author, All Rights Reserved. </div>
+
+
+</div>
+
+</body>
+</html>
